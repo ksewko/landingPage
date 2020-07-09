@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Landing Page - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/landing-page.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">Strona główna</a>
+        <a class="navbar-brand" href="{% url 'rules' %}">Zasady</a>
+        <a class="navbar-brand" href="{% url 'form' %}">Zapisz się</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <!--<div class="overlay"></div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 mx-auto">
+          <h1 class="mb-5">Wirtualny Bieg Powstania Warszawskiego</h1>
+            <h2 class="mb-5"> 24-26 lipca 2020 r.</h2>
+        </div>
+        <div class="col-md-10 col-lg-6 col-xl-6 mx-auto">
+              <div class="col-xl-9 mx-auto">
+                <a type="submit" class="btn btn-block btn-lg btn-danger" href="{% url 'form' %}">Zarejestruj się bezpłatnie!</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-1.jpg' %});"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Format Biegu</h2>
+          <p class="lead mb-0">Wirtualny Bieg Powstania Warszawskiego to impreza „na nowe czasy”.
+Jej celem jest uhonorowanie powstańców warszawskich i bohaterskiej ludności walczącej o swą
+stolicę w 1944 roku, jak również integracja biegowej społeczności w Warszawie i w całym kraju.</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-2.jpg' %});"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <p class="lead mb-0">Siła marki Biegu Powstania Warszawskiego jest ogromna, dlatego wychodzimy naprzeciw
+oczekiwaniom biegowej społeczności i zapraszamy do udziału w wydarzeniu wirtualnym, z
+zachowaniem rekomendowanych środków bezpieczeństwa sanitarnego i z należytą ostrożnością.</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-3.jpg' %});"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <p class="lead mb-0">Odniesienia historyczne i wspólna sportowa zabawa niezależnie od wieku – to zapewniamy już teraz.
+Miło nam będzie, jeśli zdecydujecie się pobiec trasą zbliżoną do naszej tradycyjnej: na dystansie 5 lub
+10 kilometrów albo zahaczającej o miejsca związane z walkami powstańczymi. A może wyrysujecie
+razem z nami symbol Polski Walczącej, czyli popularną „kotwicę” lub pobiegniecie szybkie 1944 metry
+na bieżni?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icons Grid -->
+  <section class="features-icons bg-white text-center">
+    <div class="container">
+        <h2 class="mb-5">Organizatorzy Biegu</h2>
+      <div class="row">
+          <div class="col-lg-6">
+              <!-- here was testimonial-item -->
+          <div class=" mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid mb-3" src="{% static 'img/MSWlogo.jpg' %}" width="200" height="200" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid mb-3" src="{% static 'img/AWlogo.jpg' %}" width="150" height="150" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+    <!--<div class="overlay"></div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Gotowy do startu?</h2>
+        </div>
+         <div class="col-md-10 col-lg-6 col-xl-6 mx-auto">
+              <div class="col-xl-9 mx-auto">
+                <a type="submit" class="btn btn-block btn-lg btn-danger" href="{% url 'form' %}">Zarejestruj się bezpłatnie!</a>
+              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Testimonials -->
+  <section class="testimonials text-center bg-white">
+    <div class="container">
+      <h2 class="mb-5">Sponsorzy i Partnerzy</h2>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class=" mx-auto mb-5 mb-lg-0">
+              <a href="https://www.pkobp.pl/">
+                <img class="img-fluid mb-3" src="{% static 'img/PKOlogo.jpg' %}" width="150" height="150" alt="">
+              </a>
+              <h6>Sponsor Strategiczny: </h6>
+              <h5>PKO Bank Polski</h5>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class=" mx-auto mb-5 mb-lg-0">
+              <a href="https://adrunaline.pl/">
+                <img class="img-fluid mb-3" src="{% static 'img/ADRUNALINElogo.jpg' %}" width="150" height="150" alt="">
+              </a>
+              <h6>Partner Techniczny: </h6>
+              <h5>Adrunaline</h5>
+          </div>
+        </div>
+          <div class="col-lg-3">
+          <div class=" mx-auto mb-5 mb-lg-0">
+              <a href="https://elektrowniapowisle.com/pl/">
+                <img class="img-fluid mb-3" src="{% static 'img/ElPOWlogo.jpg' %}" width="150" height="150" alt="">
+              </a>
+              <h6>Partner: </h6>
+              <h5>Elektrownia Powiśle</h5>
+          </div>
+        </div>
+          <div class="col-lg-3">
+              <!-- here was testimonial-item -->
+           <div class=" mx-auto mb-5 mb-lg-0">
+               <a href="https://fitadept.com/">
+                <img class="img-fluid mb-3" src="{% static 'img/FitADEPTlogo.jpg' %}" width="150" height="150" alt="">
+               </a>
+               <h6>Partner: </h6>
+               <h5>Fit Adept</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

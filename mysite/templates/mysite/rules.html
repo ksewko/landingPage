@@ -1,0 +1,94 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formularz rejestracji</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: url('{% static "img/backgroung-2.jpg"%}') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+        header {
+            background: black;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body id="overlay">
+<!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">Strona główna</a>
+        <a class="navbar-brand" href="{% url 'rules' %}">Zasady</a>
+        <a class="navbar-brand" href="{% url 'form' %}">Zapisz się</a>
+    </div>
+  </nav>
+
+ <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 mx-auto">
+          <h1 class="mb-5">Zasady Wirtualnego Biegu Powstania Warszawskiego 24-26.07.2020</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<section class="showcase">
+    <div class="row d-flex justify-content-center" >
+
+  <!--Grid column-->
+    <div class="col-md-6">
+
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            1. Wirtualny Bieg Powstania Warszawskiego odbędzie się w dniach 24-26 lipca 2020 r. To jedyny oficjalny bieg organizowany przez Miasto Stołeczne Warszawa oraz Stołeczne Centrum Sportu AKTYWNA WARSZAWA, inicjatora Warszawskiej Triady Biegowej „Zabiegaj o Pamięć”.</p>
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            2. Celem Wirtualnego Biegu Powstania Warszawskiego jest uhonorowanie powstańców warszawskich oraz bohaterskiej ludności walczącej o swą stolicę w 1944 roku, jak również integracja biegowej społeczności nie tylko w Warszawie, ale w całym kraju.</p>
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            3. Aby wziąć udział w wydarzeniu należy się zarejestrować na stronie <a href="https://wirtualnybpw.aktywnawarszawa.pl" class="text-warning stretched-link">https://wirtualnybpw.aktywnawarszawa.pl</a>
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            4. Rejestracja jest bezpłatna. Dla osób, które zarejestrują się najszybciej Partnerzy przygotowali symboliczne pakiety startowe w postaci wybranych usług. Liczba pakietów jest ograniczona.
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            5. Do wydarzenia można także dołączyć w na profilu AKTYWNEJ WARSZAWY w serwisie Facebook: <a href="https://tiny.pl/7c7nw" class="text-warning stretched-link">https://tiny.pl/7c7nw</a>, gdzie publikowane są szczegóły organizacyjne dotyczące biegu.
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            6. Bezpieczeństwo przede wszystkim. Biorąc udział w Wirtualnym Biegu Powstania Warszawskiego należy pamiętać o wymaganych podczas epidemii środkach ostrożności oraz zaleceń co do m.in. dystansu społecznego i zachowania w przestrzeni publicznej.
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            7. Znak Polski Walczącej, czyli popularna „kotwica” jako trasa biegu, dystans 5 lub 10 kilometrów wzorem tradycyjnych zmagań sportowych z Biegu Powstania Warszawskiego, sztafeta maratońska śladem walk powstańczych, bieg wieczorem, a może szybkie 1944 metrów na bieżni? Odniesienia historyczne i te nawiązujące do tradycyjnych edycji BPW mile widziane.
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            8. Biegniesz z drużyną? Koniecznie wypełnij właściwą rubrykę w formularzu rejestracyjnym. Dla najlepiej zorganizowanych, zapisanych drużyn Organizator przewidział niespodziankę.
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+            9. Bądźmy widoczni! Pamiętaj o hasztagach: #wirtualnybpw i #aktywnawarszawa. Stwórzmy razem biegową społeczność, która w sportowy sposób chce uhonorować wydarzenia roku 1944.
+        <p class="lead mb-0 text-white font-weight-normal" style="background-color: black; padding-left: 10px; padding-right: 10px; padding-bottom: 10px">
+        10. Najciekawsze relacje (zdjęcia, screeny z aplikacji, filmiki, grafiki z ciekawym kształtem trasy) będą nagrodzone upominkami od Sponsorów i Partnerów. Oceniać będziemy relacje publikowane w wydarzeniu na FB (<a href="https://tiny.pl/7c7nw" class="text-warning stretched-link">https://tiny.pl/7c7nw</a>), koniecznie z hasztagiem #wirtualnybpw.
+    </div>
+    </div>
+</section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
